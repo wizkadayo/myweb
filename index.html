@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="odin.css">
     <script src="https://kit.fontawesome.com/a7f2a343bb.js" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
 </head>
 <body>
-    <header class="start">
-        <a href="" class="odin"><img src="images/odinhead.png" alt=""><span>THE ODIN PROJECT</span></a>
-        <nav class="link1">
-          <a href="">All Paths</a>
-          <a href="">About</a>
-          <a href="">Community</a>
-          <a href="">Sign in</a>
-          <a href="" class="sunny-outline" title="theme icon"><ion-icon name="sunny-outline"></ion-icon></a>
-          <a href="file:///C:/Users/Bright.C/Desktop/myweb/odinform.html" class="get-started">Get Started</a>
-        </nav>
-    </header>
+    <header>
+    <nav>
+      <div class="logs">
+        <a href="index.html"><img src="images/odinhead.png" alt="The Odin Project">The Odin Project</a>
+      </div>
+<button class="menu-toggle" aria-label="Toggle navigation">
+  &#9776;
+</button>
+
+      <ul class="nav-links">
+        <li><a href="#allPaths" class="hover-link">All Paths</a></li>
+        <li><a href="#about" class="hover-link">About</a></li>
+        <li><a href="#community" class="hover-link">Community</a></li>
+        <li><a href="./support/support.html" class="hover-link">Support us</a></li>
+        <li><a href="sign-up/sign.html" class="hover-link">Sign in</a></li>
+        <li><a href="" title="theme icon"><ion-icon name="sunny-outline" class="sunny-outline"></ion-icon></a></li>
+        <li><a href="form/form.html" class="get-started">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
     <section class="hero">
@@ -226,6 +226,17 @@
    
 
 
+
+      <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
 
 
 

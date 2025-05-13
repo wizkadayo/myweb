@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign.css">
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
+
+    <header>
     <nav>
       <div class="logo">
         <a href="../index.html"><img src="../images/odinhead.png" alt="The Odin Project">The Odin Project</a>
@@ -27,42 +28,37 @@
         <li><a href="../support/support.html" class="hover-link">Support us</a></li>
         <li><a href="../sign-up/sign.html" class="hover-link">Sign in</a></li>
         <li><a href="" title="theme icon"><ion-icon name="sunny-outline" class="sunny-outline"></ion-icon></a></li>
-        <li><a href="#getStarted" class="get-started">Get Started</a></li>
+        <li><a href="../form/form.html" class="get-started">Get Started</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Sign up for free</h1>
-    <p>or <a href="../sign-up/sign.html"> sign in to your existing account</a></p></p>
+  <div class="container">
+    <h1>Sign in to your account</h1>
+    <p>Or <a href="../form/form.html">sign up for a new account</a></p>
 
-    <form class="signup-form" enctype="multipart/form-data">
-      <label>Username</label>
-      <input type="text" placeholder="Enter your username" required/>
-
-      <label>Email</label>
-      <input type="email" placeholder="Enter your email" required/>
+    <form class="form-box">
+      <label>Email address</label>
+      <input type="email" placeholder="Email address" required>
 
       <label>Password</label>
-      <input type="password" placeholder="Enter your password" required/>
+      <input type="password" placeholder="Password" required>
 
-      <label>Password confirmation</label>
-      <input type="password" placeholder="Confirm your password" required/>
+      <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot your password?</a>
+      </div>
 
-      <div class="terms"><p class="terms-text">
-         <a href="#">By signing up, you agree to our terms of use</a>.
-      </p></div>
+      <button class="btn primary-btn" type="submit">Sign in</button>
 
-      <button type="submit" class="signup-button">Sign up</button>
+      <div class="divider"><span>Or continue with</span></div>
 
-      <div class="divider">Or continue with</div>
-
-       <div class="social-buttons">
-        <button class="social-button"><i class="fab fa-github" title="GitHub"></i></button>
-        <button class="social-button"><i class="fab fa-google" title="Google"></i></button>
-       </div>
+      <div class="social-buttons">
+        <button class="social-button"><i class="fab fa-github"></i></button>
+        <button class="social-button"><i class="fab fa-google"></i></button>
+      </div>
     </form>
-  </main>
+  </div>
 
 
   <section class="support-us">
@@ -72,8 +68,7 @@
           <a href="#" class="btn-outline">Learn more</a>
           <a href="#" class="btn-solid">Donate now →</a>
         </div>
-      </section>
-
+  </section>
 
   <footer class="footer">
         <div class="footer-container">
@@ -133,12 +128,6 @@
 
 
 
-
-
-
-
-
-
   <script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.querySelector('.menu-toggle');
@@ -151,6 +140,7 @@
 </script>
 
 
-  
+
+
 </body>
 </html>
